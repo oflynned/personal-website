@@ -21,18 +21,17 @@ const Resume: FC = () => {
     <div className={'w-screen min-h-screen flex justify-center'}>
       <Page>
         <Header name={name} summary={summary} email={email} links={links} />
-        <div className={'my-8'} />
-        <WorkHistory positions={positions} />
-
         <div className={'mt-8'}>
-          <Heading content={'Projects'} />
-          <div className={'mt-2'}>
-            <Paragraph
-              content={
-                'I have a lot of projects. Head to here for a full overview'
-              }
-            />
-          </div>
+          <WorkHistory positions={positions} />
+        </div>
+
+        <Heading content={'Projects'} />
+        <div className={'mt-2'}>
+          <Paragraph
+            content={
+              'I have a lot of projects. Head to here for a full overview'
+            }
+          />
         </div>
 
         <div className={'mt-8'}>
