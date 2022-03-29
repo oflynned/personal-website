@@ -36,8 +36,12 @@ export const Icon: FC<Props> = ({ text, glyph }) => {
   const icon = getIconFromGlyph(glyph);
 
   return (
-    <div className={'flex justify-between'}>
-      {text && <p className={'flex-1 text-right font-body mr-2'}>{text}</p>}
+    <div
+      className={
+        'flex justify-between hover:cursor-pointer hover:text-red-500 duration-150'
+      }
+    >
+      {text && <p className={'flex-auto text-right font-body mr-2'}>{text}</p>}
       <div>
         <FontAwesomeIcon icon={icon} className={'flex-1 w-6'} />
       </div>
