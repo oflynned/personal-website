@@ -16,8 +16,8 @@ export const Header: FC<Props> = ({ name, summary, email, links }) => {
     <div>
       <div className={'flex justify-between'}>
         <div className={'flex flex-col'}>
-          <Heading content={name} />
-          <Paragraph content={'Software Engineer'} />
+          <Heading>{name}</Heading>
+          <Paragraph>Software Engineer</Paragraph>
         </div>
         <div className={'flex flex-col'}>
           <Icon glyph={Glyph.EMAIL} text={email} />
@@ -27,7 +27,7 @@ export const Header: FC<Props> = ({ name, summary, email, links }) => {
         </div>
       </div>
       <div className={'my-4'}>
-        <Paragraph content={summary} />
+        <Paragraph>{summary}</Paragraph>
       </div>
     </div>
   );

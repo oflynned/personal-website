@@ -11,24 +11,26 @@ export const Job: FC<Props> = ({ job }) => {
   return (
     <>
       <div className={'flex justify-between'}>
-        <Title content={job.title} />
-        <Title content={`${job.start} - ${job.end ?? 'now'}`} />
+        <Title> {job.title}</Title>
+        <Title>
+          {job.start} - {job.end ?? 'now'}
+        </Title>
       </div>
 
       <div className={'flex justify-between'}>
-        <Paragraph content={job.name} />
-        <Paragraph content={job.location} />
+        <Paragraph>{job.name}</Paragraph>
+        <Paragraph>{job.location}</Paragraph>
       </div>
 
       <div className={'mt-4'}>
-        <Paragraph content={job.description} />
+        <Paragraph>{job.description}</Paragraph>
       </div>
 
       {job.accolades && (
         <ul className={'mt-4 list-outside list-disc'}>
           {job.accolades.map((accolade) => (
             <li key={accolade}>
-              <Paragraph content={accolade} />
+              <Paragraph>{accolade}</Paragraph>
             </li>
           ))}
         </ul>
@@ -42,7 +44,7 @@ export const Job: FC<Props> = ({ job }) => {
               'rounded-lg bg-blue-100 hover:bg-blue-300 hover:cursor-pointer duration-150 p-2 m-1'
             }
           >
-            <Paragraph content={technology} />
+            <Paragraph>{technology}</Paragraph>
           </div>
         ))}
       </div>

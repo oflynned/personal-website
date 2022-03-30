@@ -10,9 +10,9 @@ export type Props = {
 export const WorkHistory: FC<Props> = ({ positions }) => {
   return (
     <>
-      <Heading content={'Jobs'} />
+      <Heading>Jobs</Heading>
       <ol className={'divide-y divide-gray-200'}>
-        {positions.map((job, index) => {
+        {positions.map((job) => {
           return (
             <li key={job.name} className={'py-8'}>
               <Job job={job} />

@@ -17,6 +17,7 @@ const Resume: FC = () => {
     languages,
     awards,
   } = experience;
+
   return (
     <div className={'w-screen min-h-screen flex justify-center'}>
       <Page>
@@ -25,28 +26,26 @@ const Resume: FC = () => {
           <WorkHistory positions={positions} />
         </div>
 
-        <Heading content={'Projects'} />
+        <Heading>Projects</Heading>
         <div className={'mt-2'}>
-          <Paragraph
-            content={
-              'I have a lot of projects. Head to here for a full overview'
-            }
-          />
+          <Paragraph>
+            I have a lot of projects. Head to here for a full overview
+          </Paragraph>
         </div>
 
         <div className={'mt-8'}>
-          <Heading content={'Languages'} />
+          <Heading>Languages</Heading>
           <div className={'mt-2'}>
-            <Paragraph content={languages.join(', ')} />
+            <Paragraph>{languages.join(', ')}</Paragraph>
           </div>
         </div>
 
         <div className={'mt-8'}>
-          <Heading content={'Awards'} />
+          <Heading>Awards</Heading>
           <ul className={'mt-2'}>
             {awards.map((award) => (
               <li key={award}>
-                <Paragraph content={award} />
+                <Paragraph>{award}</Paragraph>
               </li>
             ))}
           </ul>
