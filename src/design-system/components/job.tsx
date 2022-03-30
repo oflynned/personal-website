@@ -1,5 +1,7 @@
 import { FC } from 'react';
 import { Position } from '../../data/experience';
+import { ChipHolder } from '../atoms/chip-holder.atom';
+import { Chip } from '../atoms/chip.atom';
 import { Paragraph } from '../atoms/paragraph.atom';
 import { Title } from '../atoms/title.atom';
 
@@ -13,7 +15,7 @@ export const Job: FC<Props> = ({ job }) => {
       <div className={'flex justify-between'}>
         <Title> {job.title}</Title>
         <Title>
-          {job.start} - {job.end ?? 'now'}
+          {job.start} &mdash; {job.end ?? 'now'}
         </Title>
       </div>
 
@@ -36,17 +38,16 @@ export const Job: FC<Props> = ({ job }) => {
         </ul>
       )}
 
-      <div className={'mt-4 flex flex-wrap flex-row'}>
-        {job.technologies.map((technology) => (
-          <div
-            key={technology}
-            className={
-              'rounded-lg bg-blue-100 hover:bg-blue-300 hover:cursor-pointer duration-150 p-2 m-1'
-            }
-          >
-            <Paragraph>{technology}</Paragraph>
-          </div>
-        ))}
+      <div className={'mt-4'}>
+        <ChipHolder>
+          {job.technologies
+            .sort((a, b) => (a.toLowerCase() > b.toLowerCase() ? 1 : -1))
+            .map((technology, index) => (
+              <div key={index} className={'m-1'}>
+                <Chip>{technology}</Chip>
+              </div>
+            ))}
+        </ChipHolder>
       </div>
     </>
   );

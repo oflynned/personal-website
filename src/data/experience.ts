@@ -34,16 +34,17 @@ export type Experience = {
   email: string;
   links: Link[];
   positions: Position[];
-  education: Education;
+  qualifications: Qualification[];
   languages: string[];
   awards: string[];
 };
 
-export type Education = {
+export type Qualification = {
   institution: string;
   degree: string;
-  result: string;
   award: string;
+  result: string;
+  location: string;
 };
 
 const yearsOfExperience = () => {
@@ -77,19 +78,22 @@ export const experience: Experience = {
     '1 of 10 in Ireland to receive the Huawei Seeds of the Future scholarship to spend a month in China',
   ],
   languages: ['English', 'Irish', 'French', 'Dutch', 'German', 'Polish'],
-  education: {
-    institution: 'University of Dublin, Trinity College',
-    degree: 'Computer Engineering',
-    result: 'II:I',
-    award: 'BEng',
-  },
+  qualifications: [
+    {
+      institution: 'University of Dublin, Trinity College',
+      degree: 'Computer Engineering',
+      result: 'II:I',
+      award: 'BA, BEng',
+      location: 'Dublin, Ireland',
+    },
+  ],
   positions: [
     {
       name: 'aaqua',
       location: 'Antwerp, Belgium',
       title: 'Senior Software Engineer',
       role: Role.EMPLOYEE,
-      start: 'Aug 2020',
+      start: 'August 2020',
       description:
         'Aaqua is a passion-led social network. Members can jointly curate original and engaging content combined with member inspired online-to-offline initiatives centred around their hobbies and interests.',
       accolades: [
@@ -119,6 +123,8 @@ export const experience: Experience = {
         'Kubernetes',
         'Terraform',
         'ArgoCD',
+        'Jest',
+        'Mocha',
       ],
     },
     {
@@ -126,8 +132,8 @@ export const experience: Experience = {
       location: 'Brussels, Belgium',
       title: 'Senior Frontend Engineer, Team Lead',
       role: Role.EMPLOYEE,
-      start: 'Nov 2019',
-      end: 'Jul 2020',
+      start: 'November 2019',
+      end: 'July 2020',
       description:
         'Sortlist is an independent Belgian platform that specialises in putting businesses in touch with marketing & communication agencies. Clients define their needs for projects and are then are put in contact with relevant agencies for completing the specific project. Agencies receive relevant business opportunities tailored to their needs.',
       accolades: [
@@ -147,6 +153,9 @@ export const experience: Experience = {
         'REST',
         'Docker',
         'Monorepo',
+        'Enyme',
+        'Jest',
+        'Cypress',
       ],
     },
     {
@@ -154,10 +163,10 @@ export const experience: Experience = {
       location: 'Remote',
       title: 'Software Engineer',
       role: Role.CONTRACTOR,
-      start: 'Jan 2019',
-      end: 'Nov 2019',
+      start: 'January 2019',
+      end: 'November 2019',
       description:
-        'DeveloperFair is an end-to-end platform for non-IT businesses to build software in an accessible and minimal risk way. It is an evolution of the managed service marketplace space by providing businesses and freelancers the capability to successfully build and manage their own software projects.',
+        'Devfair is an end-to-end platform for non-IT businesses to build software in an accessible and minimal risk way. It is an evolution of the managed service marketplace space by providing businesses and freelancers the capability to successfully build and manage their own software projects.',
       accolades: [
         'Communicated effectively with clients and teams to define requirements and specifications for projects.',
         'Implemented a resource ledger/management platform for environmental restoration in rural Kenya.',
@@ -181,8 +190,8 @@ export const experience: Experience = {
       location: 'Dublin, Ireland',
       title: 'Software Engineer',
       role: Role.EMPLOYEE,
-      start: 'Feb 2018',
-      end: 'Jan 2019',
+      start: 'February 2018',
+      end: 'January 2019',
       description:
         'Swrve is a mobile marketing and customer engagement platform that helps leading brands confidently scale 14+ billion communications events to 300+ million customers in real time. They process richer real-time data allowing brands to respond with more relevance to the action and intent of customers in real-time.',
       accolades: [
@@ -205,8 +214,8 @@ export const experience: Experience = {
       location: 'Dublin, Ireland',
       title: 'Cofounder, Chief Product/Technology Officer',
       role: Role.SELF_EMPLOYED,
-      start: 'Apr 2015',
-      end: 'Dec 2017',
+      start: 'April 2015',
+      end: 'December 2017',
       description:
         'GlassByte was a software consultancy firm specialising in the procurement of medical-based apps and services in conjunction with hospitals and universities around the Dublin metro region to provide new and innovative technologies.',
       accolades: [
@@ -235,7 +244,7 @@ export const experience: Experience = {
       description:
         'Worked alongside data scientists & software engineers in the Accenture Innovation Labs to receive mentoring and develop interesting solutions using machine learning and AI technology.',
       start: 'June 2016',
-      end: 'Sept 2016',
+      end: 'September 2016',
       accolades: [
         "Developed an Alexa skill to greet a user after recognising the user's face from a webcam",
         'Assisted in a project to generate art from sensor metrics',

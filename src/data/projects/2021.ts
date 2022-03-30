@@ -1,0 +1,30 @@
+import {
+  Framework,
+  Language,
+  Platform,
+  Project,
+  ProjectType,
+  Tool,
+} from './showcase';
+
+export const projects_2021: Project[] = [
+  {
+    name: 'Github Action - Android Version Bump',
+    year: 2021,
+    description: [
+      'An automated way to bump semantic versioning using Github on a native Android repository.',
+      'The version is generated using TypeScript when the action is kicked off on a specific workflow. Using semantic commit messages, the CI run can determine the appropriate version bump to assign to the new release.',
+      'When the job completes, it creates a tag and exports parameters to create a release later in the workflow.',
+    ],
+    type: ProjectType.PERSONAL,
+    resumeWorthy: false,
+    technologies: [
+      Language.TYPESCRIPT,
+      Tool.JEST,
+      Platform.ANDROID,
+      Framework.ANDROID_SDK,
+      Language.GROOVY,
+      Language.SHELL,
+    ],
+  },
+];

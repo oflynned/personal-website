@@ -1,0 +1,14 @@
+import { FC } from 'react';
+import { Paragraph } from './paragraph.atom';
+
+export const Chip: FC = ({ children }) => {
+  return (
+    <div
+      className={
+        'rounded-lg bg-blue-100 hover:bg-blue-300 hover:cursor-pointer duration-150 p-2'
+      }
+    >
+      <Paragraph>{children}</Paragraph>
+    </div>
+  );
+};
