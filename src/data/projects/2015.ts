@@ -25,7 +25,7 @@ export const projects_2015: Project[] = [
   },
   {
     name: 'DrinkTracker',
-    description: [''],
+    description: [],
     year: 2015,
     type: ProjectType.STARTUP,
     resumeWorthy: false,

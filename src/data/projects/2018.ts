@@ -11,7 +11,7 @@ import {
 export const projects_2018: Project[] = [
   {
     name: 'Occup.ie',
-    description: [''],
+    description: [],
     year: 2018,
     type: ProjectType.STARTUP,
     technologies: [
@@ -30,7 +30,7 @@ export const projects_2018: Project[] = [
   },
   {
     name: 'T1Exercise',
-    description: [''],
+    description: [],
     year: 2018,
     type: ProjectType.CONTRACTOR,
     technologies: [

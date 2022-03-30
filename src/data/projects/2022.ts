@@ -1,11 +1,5 @@
-import {
-  Framework,
-  Language,
-  Project,
-  ProjectType,
-  Protocol,
-  Tool,
-} from './showcase';
+import { usualApiStack } from './api.stack';
+import { Framework, Language, Project, ProjectType, Tool } from './showcase';
 
 export const projects_2022: Project[] = [
   {
@@ -16,29 +10,30 @@ export const projects_2022: Project[] = [
     ],
     type: ProjectType.PERSONAL,
     resumeWorthy: false,
-    technologies: [Language.TYPESCRIPT, Tool.JEST, Framework.SUPERTEST],
+    technologies: [...usualApiStack],
+  },
+  {
+    name: 'NestJS starter template',
+    year: 2022,
+    type: ProjectType.PERSONAL,
+    resumeWorthy: false,
+    description: [],
+    technologies: [...usualApiStack],
   },
   {
     name: 'DiabetesPlus',
     year: 2022,
     type: ProjectType.PERSONAL,
     resumeWorthy: false,
-    description: [''],
-    technologies: [
-      Language.TYPESCRIPT,
-      Tool.JEST,
-      Framework.SUPERTEST,
-      Protocol.GRAPHQL,
-      Framework.NESTJS,
-      Framework.NODEJS,
-    ],
+    description: [],
+    technologies: [...usualApiStack, Framework.REACT_NATIVE],
   },
   {
-    name: 'Syzible.com',
+    name: 'Personal Website (here!)',
     year: 2022,
     type: ProjectType.PERSONAL,
     resumeWorthy: false,
-    description: [''],
+    description: [],
     technologies: [
       Language.TYPESCRIPT,
       Language.JAVASCRIPT,

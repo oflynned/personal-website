@@ -11,7 +11,7 @@ import {
 export const projects_2019: Project[] = [
   {
     name: 'GreenFi',
-    description: [''],
+    description: [],
     year: 2019,
     type: ProjectType.CONTRACTOR,
     technologies: [

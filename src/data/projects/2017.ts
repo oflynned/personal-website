@@ -38,7 +38,7 @@ export const projects_2017: Project[] = [
   },
   {
     name: 'Loinnir',
-    description: [''],
+    description: [],
     year: 2017,
     type: ProjectType.PERSONAL,
     technologies: [

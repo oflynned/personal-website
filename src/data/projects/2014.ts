@@ -9,7 +9,7 @@ import {
 export const projects_2014: Project[] = [
   {
     name: 'Open World',
-    description: [''],
+    description: [],
     year: 2014,
     type: ProjectType.PERSONAL,
     resumeWorthy: false,

@@ -16,6 +16,6 @@ export const projects = [
   ...projects_2018,
   ...projects_2019,
   ...projects_2020,
-  ...projects_2022,
   ...projects_2021,
+  ...projects_2022,
 ];

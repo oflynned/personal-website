@@ -1,3 +1,4 @@
+import { usualApiStack } from './api.stack';
 import {
   Database,
   Framework,
@@ -5,7 +6,6 @@ import {
   Platform,
   Project,
   ProjectType,
-  Protocol,
   Tool,
 } from './showcase';
 
@@ -24,21 +24,10 @@ export const projects_2020: Project[] = [
       Platform.ANDROID,
       Framework.ANDROID_SDK,
       Platform.WEB,
-      Platform.API,
       Language.KOTLIN,
       Language.JAVA,
-      Framework.NESTJS,
-      Framework.EXPRESSJS,
-      Language.JAVASCRIPT,
-      Language.TYPESCRIPT,
       Database.MONGODB,
-      Database.POSTGRESQL,
-      Protocol.RPC,
-      Database.REDIS,
-      Tool.JEST,
-      Framework.BULLJS,
-      Tool.DOCKER,
-      Tool.DOCKER_COMPOSE,
+      ...usualApiStack,
     ],
   },
   {
