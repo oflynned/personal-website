@@ -41,7 +41,7 @@ export const Job: FC<Props> = ({ job }) => {
       <div className={'mt-4'}>
         <ChipHolder>
           {job.technologies
-            .sort((a, b) => (a > b ? 1 : -1))
+            .sort((a, b) => (a.toLowerCase() > b.toLowerCase() ? 1 : -1))
             .map((technology, index) => (
               <div key={index} className={'m-1'}>
                 <Chip>{technology}</Chip>

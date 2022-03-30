@@ -25,7 +25,7 @@ export const Portfolio: FC<Props> = ({ project }) => {
       <ul className={'mt-4'}>
         <ChipHolder>
           {project.technologies
-            .sort((a, b) => (a > b ? 1 : -1))
+            .sort((a, b) => (a.toLowerCase() > b.toLowerCase() ? 1 : -1))
             .map((technology) => (
               <li key={technology} className={'m-1'}>
                 <Chip>{technology}</Chip>
