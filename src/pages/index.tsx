@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Card } from '../design-system/atoms/card.atom';
 import { Chip } from '../design-system/atoms/chip.atom';
 import { Paragraph } from '../design-system/atoms/paragraph.atom';
@@ -8,6 +8,8 @@ import { XlHeading } from '../design-system/atoms/xl-heading.atom';
 import { Navbar } from '../design-system/molecules/nav-bar.molecule';
 
 const Home: NextPage = () => {
+  const router = useRouter();
+
   return (
     <div className={'w-screen h-screen snap-y snap-mandatory overflow-scroll'}>
       <div
@@ -171,14 +173,10 @@ const Home: NextPage = () => {
           <Paragraph>Think I could be a good fit? Let&apos;s chat 🤝</Paragraph>
 
           <div className={'flex flex-row space-x-1'}>
-            <Chip>
-              <Link href={'/cv'}>CV</Link>
-            </Chip>
-            <Chip>
-              <Link href={'/portfolio'}>Portfolio</Link>
-            </Chip>
-            <Chip>
-              <a href={'mailto:oflynned@gmail.com'}>Email</a>
+            <Chip onClick={() => router.push('/cv')}>CV</Chip>
+            <Chip onClick={() => router.push('/portfolio')}>Portfolio</Chip>
+            <Chip onClick={() => window.open('mailto:oflynned@gmail.com')}>
+              Email
             </Chip>
           </div>
         </div>

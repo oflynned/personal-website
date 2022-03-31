@@ -29,6 +29,7 @@ export enum Framework {
   ANDROID_SDK = 'Android SDK',
   IOS_SDK = 'iOS SDK',
   NEXTJS = 'Next.js',
+  GATSBYJS = 'Gatsby.js',
   NESTJS = 'Nest.js',
   KOAJS = 'Koa.js',
   EXPRESSJS = 'Express.js',
@@ -49,8 +50,8 @@ export enum Framework {
 export enum Platform {
   WINDOWS = 'Windows',
   OSX = 'OSX',
-  ANDROID = 'Android',
-  IOS = 'iOS',
+  ANDROID_APP = 'Android app',
+  IOS_APP = 'iOS app',
   WEB = 'Web',
   API = 'API',
 }
@@ -64,6 +65,9 @@ export enum Tool {
   XCODE = 'XCode',
   FIREBASE = 'Firebase',
   WEBPACK = 'Webpack',
+  HILT = 'Hilt',
+  PANDAS = 'Pandas',
+  D3JS = 'D3.js',
 }
 
 export enum Protocol {
@@ -77,6 +81,7 @@ export enum Database {
   SQLITE = 'SQLite',
   POSTGRESQL = 'PostgreSQL',
   MONGODB = 'MongoDB',
+  NEO4J = 'Neo4j',
   REDIS = 'Redis',
 }
 
@@ -94,5 +99,6 @@ export type Project = {
   type: ProjectType;
   technologies: Technology[];
   description: string[];
-  resumeWorthy: boolean;
+  resumeWorthy?: boolean;
+  notable?: boolean;
 };

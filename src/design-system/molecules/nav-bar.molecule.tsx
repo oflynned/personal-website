@@ -39,8 +39,6 @@ export const Navbar = () => {
           <InternalLink text={'Home'} href={'/'} />
           <InternalLink text={'Portfolio'} href={'/portfolio'} />
           <InternalLink text={'CV'} href={'/cv'} />
-
-          <ExternalLink text={'Thesis'} href={'/thesis.pdf'} />
           <ExternalLink text={'Thesis'} href={'/thesis.pdf'} />
           <ExternalLink
             text={'Snapchat Filter Project'}

@@ -9,14 +9,14 @@ export const projects_2022: Project[] = [
       'Revisiting the 2016 idea and reimplementing the idea correctly using modern technology',
     ],
     type: ProjectType.PERSONAL,
-    resumeWorthy: false,
+
     technologies: [...usualApiStack],
   },
   {
     name: 'NestJS starter template',
     year: 2022,
     type: ProjectType.PERSONAL,
-    resumeWorthy: false,
+
     description: [],
     technologies: [...usualApiStack],
   },
@@ -24,7 +24,7 @@ export const projects_2022: Project[] = [
     name: 'DiabetesPlus',
     year: 2022,
     type: ProjectType.PERSONAL,
-    resumeWorthy: false,
+
     description: [],
     technologies: [...usualApiStack, Framework.REACT_NATIVE],
   },
@@ -32,7 +32,7 @@ export const projects_2022: Project[] = [
     name: 'Personal Website (here!)',
     year: 2022,
     type: ProjectType.PERSONAL,
-    resumeWorthy: false,
+
     description: [],
     technologies: [
       Language.TYPESCRIPT,

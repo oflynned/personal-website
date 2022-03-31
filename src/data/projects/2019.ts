@@ -6,6 +6,7 @@ import {
   Project,
   ProjectType,
   Protocol,
+  Tool,
 } from './showcase';
 
 export const projects_2019: Project[] = [
@@ -27,8 +28,38 @@ export const projects_2019: Project[] = [
       Framework.ANDROID_SDK,
       Platform.WEB,
       Platform.API,
-      Platform.ANDROID,
+      Platform.ANDROID_APP,
     ],
-    resumeWorthy: false,
+  },
+  {
+    name: 'Hairdressers Connect',
+    description: [],
+    year: 2019,
+    type: ProjectType.CONTRACTOR,
+    technologies: [
+      Language.JAVASCRIPT,
+      Framework.EXPRESSJS,
+      Framework.NODEJS,
+      Database.MONGODB,
+      Tool.MOCHA,
+      Framework.REACT,
+      Platform.API,
+    ],
+  },
+  {
+    name: 'Irish Nouns',
+    description: [],
+    year: 2019,
+    type: ProjectType.PERSONAL,
+    technologies: [
+      Platform.ANDROID_APP,
+      Framework.ANDROID_SDK,
+      Language.JAVA,
+      Tool.FIREBASE,
+      Framework.EXPRESSJS,
+      Language.JAVASCRIPT,
+      Database.MONGODB,
+      Platform.API,
+    ],
   },
 ];
