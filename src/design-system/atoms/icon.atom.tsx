@@ -16,6 +16,7 @@ export type Props = {
   glyph: Glyph;
   text?: string;
   href?: string;
+  onClick?: () => void;
 };
 
 const getIconFromGlyph = (glyph: Glyph): IconDefinition => {
@@ -32,7 +33,7 @@ const getIconFromGlyph = (glyph: Glyph): IconDefinition => {
   }
 };
 
-export const Icon: FC<Props> = ({ text, glyph }) => {
+export const Icon: FC<Props> = ({ text, glyph, onClick = () => {} }) => {
   const icon = getIconFromGlyph(glyph);
 
   return (
@@ -40,6 +41,7 @@ export const Icon: FC<Props> = ({ text, glyph }) => {
       className={
         'flex justify-between hover:cursor-pointer hover:text-red-500 duration-150'
       }
+      onClick={onClick}
     >
       {text && <p className={'flex-auto text-right font-body mr-2'}>{text}</p>}
       <div>
