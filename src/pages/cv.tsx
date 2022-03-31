@@ -30,7 +30,7 @@ const CurriculumVitae: NextPage = () => {
       <div className={'my-8'}>
         <Chip
           onClick={() => {
-            window.open('/cv.pdf', '_href');
+            window.open('/cv.pdf', '_blank');
           }}
         >
           PDF version available here
