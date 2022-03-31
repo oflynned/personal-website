@@ -1,12 +1,17 @@
 import { FC } from 'react';
 import { Paragraph } from './paragraph.atom';
 
-export const Chip: FC = ({ children }) => {
+export type Props = {
+  onClick?: () => void;
+};
+
+export const Chip: FC<Props> = ({ children, onClick = () => {} }) => {
   return (
     <div
       className={
         'rounded-lg bg-blue-100 hover:bg-blue-300 hover:cursor-pointer duration-150 p-2'
       }
+      onClick={onClick}
     >
       <Paragraph>{children}</Paragraph>
     </div>
