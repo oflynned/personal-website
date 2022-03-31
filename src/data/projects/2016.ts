@@ -10,13 +10,28 @@ import {
 
 export const projects_2016: Project[] = [
   {
+    name: 'Meat Timer',
+    description: [
+      'An Android app that mathematically deduces how long to cook meat depending on the parameters given.',
+    ],
+    year: 2016,
+    type: ProjectType.PERSONAL,
+
+    technologies: [
+      Language.JAVA,
+      Language.XML,
+      Framework.ANDROID_SDK,
+      Platform.ANDROID_APP,
+    ],
+  },
+  {
     name: 'Neurobranch',
     description: [
       'Neurobranch was a clinical trials platform for researchers to run customisable clinical trials and collate the information for processing. Participants can opt in and join trials depending on preconditions, and then report information without researcher intervention.',
     ],
     year: 2016,
     type: ProjectType.STARTUP,
-    resumeWorthy: false,
+
     technologies: [
       Language.JAVASCRIPT,
       Language.HTML,
@@ -40,7 +55,7 @@ export const projects_2016: Project[] = [
     ],
     year: 2016,
     type: ProjectType.EMPLOYEE,
-    resumeWorthy: false,
+
     technologies: [
       Language.JAVA,
       Framework.SPRING,
@@ -52,19 +67,17 @@ export const projects_2016: Project[] = [
     ],
   },
   {
-    name: 'Meat Timer',
-    description: [
-      'An Android app that mathematically deduces how long to cook meat depending on the parameters given.',
-    ],
+    name: 'Zoomba',
+    description: [],
     year: 2016,
-    type: ProjectType.PERSONAL,
-    resumeWorthy: false,
     technologies: [
       Language.JAVA,
-      Language.XML,
+      Platform.ANDROID_APP,
       Framework.ANDROID_SDK,
-      Platform.ANDROID,
+      Language.XML,
+      Framework.OPENGL,
     ],
+    type: ProjectType.STARTUP,
   },
   {
     name: 'Irish Dictionary App',
@@ -74,14 +87,14 @@ export const projects_2016: Project[] = [
     ],
     year: 2016,
     type: ProjectType.PERSONAL,
-    resumeWorthy: false,
+
     technologies: [
       Language.JAVASCRIPT,
       Framework.EXPRESSJS,
       Framework.NODEJS,
       Language.JAVA,
       Framework.ANDROID_SDK,
-      Platform.ANDROID,
+      Platform.ANDROID_APP,
     ],
   },
   {
@@ -92,6 +105,5 @@ export const projects_2016: Project[] = [
     technologies: [Language.CPP, Framework.OPENGL, Platform.WINDOWS],
     year: 2016,
     type: ProjectType.PERSONAL,
-    resumeWorthy: false,
   },
 ];
