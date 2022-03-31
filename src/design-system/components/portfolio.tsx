@@ -14,13 +14,11 @@ export const Portfolio: FC<Props> = ({ project }) => {
     <>
       <Title>{project.name}</Title>
 
-      <ul className={'mt-2'}>
-        {project.description.map((item, index) => (
-          <li key={index}>
-            <Paragraph>{item}</Paragraph>
-          </li>
-        ))}
-      </ul>
+      {project.description.map((item, index) => (
+        <div key={index}>
+          <Paragraph>{item}</Paragraph>
+        </div>
+      ))}
 
       <ul className={'mt-4'}>
         <ChipHolder>
