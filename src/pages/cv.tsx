@@ -1,11 +1,13 @@
-import { FC } from 'react';
+import { NextPage } from 'next';
 import { experience } from '../data/experience';
 import { projects } from '../data/projects';
+import { Chip } from '../design-system/atoms/chip.atom';
 import { Heading } from '../design-system/atoms/heading.atom';
 import { Paragraph } from '../design-system/atoms/paragraph.atom';
 import { Page } from '../design-system/components/page';
 import { EducationHistory } from '../design-system/molecules/education-history.molecule';
 import { Header } from '../design-system/molecules/header.molecule';
+import { Navbar } from '../design-system/molecules/nav-bar.molecule';
 import { ProjectHistory } from '../design-system/molecules/project-history.molecule';
 import { WorkHistory } from '../design-system/molecules/work-history.molecule';
 
@@ -21,9 +23,19 @@ const {
   awards,
 } = experience;
 
-const Resume: FC = () => {
+const CurriculumVitae: NextPage = () => {
   return (
-    <div className={'w-screen min-h-screen flex justify-center'}>
+    <div className={'flex flex-col w-screen min-h-screen flex items-center'}>
+      <Navbar />
+      <div className={'my-8'}>
+        <Chip
+          onClick={() => {
+            window.open('/cv.pdf', '_href');
+          }}
+        >
+          PDF version available here
+        </Chip>
+      </div>
       <Page>
         <Header name={name} summary={summary} email={email} links={links} />
 
@@ -61,4 +73,4 @@ const Resume: FC = () => {
   );
 };
 
-export default Resume;
+export default CurriculumVitae;
