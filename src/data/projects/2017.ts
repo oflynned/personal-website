@@ -105,7 +105,7 @@ export const projects_2017: Project[] = [
   {
     name: 'Trojan horse in a decoy game',
     description: [
-      'A proof of concept for trying to execute code on a remote machine. There are three parts to this: the first one is a shell script that snaps pictures of the user and shows notifications. The second part is a decoy snake game that fetches this remote script from a git repo. The third part is a simple REST API with a flag to invoke or not.',
+      'A proof of concept for trying to execute code on a remote machine. There are three parts to this: the first one is a shell script that snaps pictures of the user and shows notifications. The second part is a decoy snake game that fetches this remote script from a Git repo. The third part is a simple REST API with a flag to invoke or not.',
       'The remote shell script executes code to run the script via a crontab, making it difficult to remove without some system knowledge.',
     ],
     year: 2017,
