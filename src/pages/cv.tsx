@@ -25,9 +25,11 @@ const {
 
 const CurriculumVitae: NextPage = () => {
   return (
-    <div className={'flex flex-col w-screen min-h-screen flex items-center'}>
+    <div
+      className={'flex flex-col w-screen min-h-screen flex items-center mb-8'}
+    >
       <Navbar />
-      <div className={'my-8'}>
+      <div className={'m-12'}>
         <Chip
           onClick={() => {
             window.open('/cv.pdf', '_blank');
