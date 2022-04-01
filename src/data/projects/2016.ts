@@ -45,6 +45,8 @@ export const projects_2016: Project[] = [
       Protocol.REST,
       Language.JAVA,
       Framework.ANDROID_SDK,
+      Platform.ANDROID_APP,
+      Platform.API,
       Language.XML,
     ],
   },
