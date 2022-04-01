@@ -25,6 +25,11 @@ class MyDocument extends Document {
           />
           <title>Syzible</title>
           <meta property={'og:title'} content={'Syzible'} key={'title'} />
+          <meta
+            property={'og:description'}
+            content={'My personal website for showcasing my work'}
+            key={'description'}
+          />
         </Head>
         <body>
           <Main />
