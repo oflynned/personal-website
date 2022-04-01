@@ -33,9 +33,13 @@ const ExternalLink: FC<{ text: string; href: string }> = ({ text, href }) => {
 
 export const Navbar = () => {
   return (
-    <nav className={'flex w-screen h-fit px-12 py-8'}>
-      <div className={'flex w-screen justify-between'}>
-        <div className={'flex flex-row space-x-8 divider-x divide-gray-500'}>
+    <nav className={'flex w-screen h-fit p-4 sm:py-8 max-w-screen-lg'}>
+      <div className={'flex w-full justify-between'}>
+        <div
+          className={
+            'flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0 divider-x divide-gray-500'
+          }
+        >
           <InternalLink text={'Home'} href={'/'} />
           <InternalLink text={'Portfolio'} href={'/portfolio'} />
           <InternalLink text={'CV'} href={'/cv'} />

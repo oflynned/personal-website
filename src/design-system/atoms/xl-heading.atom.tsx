@@ -1,5 +1,9 @@
 import React, { FC } from 'react';
 
 export const XlHeading: FC = ({ children }) => {
-  return <h3 className={'text-4xl font-bold font-heading'}>{children}</h3>;
+  return (
+    <h3 className={'text-4xl font-bold font-heading leading-loose'}>
+      {children}
+    </h3>
+  );
 };

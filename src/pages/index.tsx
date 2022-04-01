@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     <div className={'w-screen h-screen snap-y snap-mandatory overflow-scroll'}>
       <div
         className={
-          'flex flex-col h-screen w-screen snap-start overflow-scroll items-center justify-between pb-8'
+          'flex flex-col min-h-screen w-screen snap-start overflow-scroll items-center justify-between pb-8'
         }
       >
         <Navbar />
@@ -24,7 +24,9 @@ const Home: NextPage = () => {
         <Paragraph>Let&apos;s take a walk 👇</Paragraph>
       </div>
 
-      <section className={'flex h-screen w-screen justify-center snap-start'}>
+      <section
+        className={'flex min-h-screen p-8 w-screen justify-center snap-start'}
+      >
         <div className={'flex flex-col self-center max-w-screen-lg'}>
           <div className={'flex flex-col space-y-8 items-center'}>
             <div className={'text-center space-y-4'}>
