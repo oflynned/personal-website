@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { NextPage } from 'next';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { experience } from '../data/experience';
 import { projects } from '../data/projects';
@@ -30,7 +31,7 @@ const Home: NextPage = () => {
         <Navbar />
         <div
           className={
-            'w-full max-w-screen-lg flex flex-col sm:flex-row justify-between'
+            'w-full max-w-screen-lg flex flex-col sm:flex-row justify-between px-8'
           }
         >
           <div className={'self-center text-center sm:text-left'}>
@@ -56,12 +57,12 @@ const Home: NextPage = () => {
             animate={{ opacity: 1 }}
             transition={{ ease: 'easeIn', duration: 0.5, delay: 2 }}
           >
-            <img
+            <Image
+              width={320}
+              height={240}
               alt={'Me'}
               src={'/me.jpeg'}
-              className={
-                'shadow rounded-3xl max-w-full h-auto border-none align-middle'
-              }
+              className={' hadow rounded-3xl border-none align-middle'}
             />
           </motion.div>
         </div>
