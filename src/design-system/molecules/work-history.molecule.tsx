@@ -14,7 +14,7 @@ export const WorkHistory: FC<Props> = ({ positions }) => {
       <ol className={'divide-y divide-gray-200'}>
         {positions.map((job) => {
           return (
-            <li key={job.name} className={'py-8'}>
+            <li key={job.company} className={'py-8'}>
               <Job job={job} />
             </li>
           );

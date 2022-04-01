@@ -20,7 +20,7 @@ export const Job: FC<Props> = ({ job }) => {
       </div>
 
       <div className={'flex justify-between text-right'}>
-        <Paragraph>{job.name}</Paragraph>
+        <Paragraph>{job.company}</Paragraph>
         <Paragraph>{job.location}</Paragraph>
       </div>
 
