@@ -23,6 +23,8 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;500;700&display=swap"
             rel="stylesheet"
           />
+          <title>Syzible</title>
+          <meta property={'og:title'} content={'Syzible'} key={'title'} />
         </Head>
         <body>
           <Main />
