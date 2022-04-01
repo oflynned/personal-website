@@ -71,7 +71,7 @@ export const projects_2017: Project[] = [
     type: ProjectType.STARTUP,
     description: [
       'DiabetesPlus was another collaboration with the hospital Tallaght AMNCH in Dublin, Ireland. The initial scope of the project was to create a proof of concept for validation in a clinical trial.',
-      'The app was a recommendation engine for users who live with type 2 diabetes and required suggestions to manage their blood sugar levels when exercising. It won a cash-prize in the entrepreneur awards hosted in CIT.',
+      'The app was a recommendation engine for users who live with type 2 diabetes and required suggestions to manage their blood sugar levels when exercising. It won a cash-prize in the entrepreneur awards hosted in Cork Institute of Technology.',
     ],
     technologies: [
       Framework.FLASK,
