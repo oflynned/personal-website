@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { experience } from '../data/experience';
@@ -27,7 +28,43 @@ const Home: NextPage = () => {
         }
       >
         <Navbar />
-        <XlHeading>Hey, I&apos;m Ed</XlHeading>
+        <div
+          className={
+            'w-full max-w-screen-lg flex flex-col sm:flex-row justify-between'
+          }
+        >
+          <div className={'self-center text-center sm:text-left'}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ ease: 'easeIn', duration: 0.5 }}
+            >
+              <XlHeading>Hey, I&apos;m Ed</XlHeading>
+            </motion.div>
+            <motion.div
+              className={'mb-4'}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ ease: 'easeIn', duration: 0.5, delay: 1 }}
+            >
+              <Paragraph>I&apos;m a software engineer.</Paragraph>
+            </motion.div>
+          </div>
+          <motion.div
+            className={'max-w-xs self-center'}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 2 }}
+          >
+            <img
+              alt={'Me'}
+              src={'/me.jpeg'}
+              className={
+                'shadow rounded-3xl max-w-full h-auto border-none align-middle'
+              }
+            />
+          </motion.div>
+        </div>
         <Paragraph>Let&apos;s take a walk 👇</Paragraph>
       </div>
 
