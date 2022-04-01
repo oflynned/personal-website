@@ -53,7 +53,7 @@ const Portfolio: NextPage = () => {
                           {project.year} &mdash; {project.type}
                         </Paragraph>
                       </div>
-                      <div className={'mt-4'}>
+                      <div className={'mt-4 space-y-2'}>
                         {project.description.map((item, index) => (
                           <div key={index}>
                             <Paragraph>{item}</Paragraph>
