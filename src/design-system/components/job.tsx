@@ -12,14 +12,14 @@ export interface Props {
 export const Job: FC<Props> = ({ job }) => {
   return (
     <>
-      <div className={'flex justify-between'}>
+      <div className={'flex sm:flex-row flex-col sm:justify-between'}>
         <Title> {job.title}</Title>
         <Title>
           {job.start} &mdash; {job.end ?? 'now'}
         </Title>
       </div>
 
-      <div className={'flex justify-between'}>
+      <div className={'flex justify-between text-right'}>
         <Paragraph>{job.name}</Paragraph>
         <Paragraph>{job.location}</Paragraph>
       </div>

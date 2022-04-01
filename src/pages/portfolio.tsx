@@ -13,8 +13,8 @@ const Portfolio: NextPage = () => {
     <div className={'flex justify-center flex-col items-center mb-8'}>
       <Navbar />
 
-      <div className={'max-w-screen-lg'}>
-        <div className={'mt-4'}>
+      <div className={'max-w-screen-lg p-4'}>
+        <div>
           <Heading>Skills</Heading>
           <div className={'mt-4'}>
             <div className={'flex flex-row flex-wrap justify-center'}>
