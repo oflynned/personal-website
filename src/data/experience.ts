@@ -1,5 +1,5 @@
 export type Position = {
-  name: string;
+  company: string;
   location: string;
   title: string;
   role: Role;
@@ -80,7 +80,7 @@ export const experience: Experience = {
   languages: ['English', 'Irish', 'French', 'Dutch', 'German', 'Polish'],
   qualifications: [
     {
-      institution: 'University of Dublin, Trinity College',
+      institution: 'Trinity College Dublin',
       degree: 'Computer Engineering',
       result: 'II:I',
       award: 'BA, BEng',
@@ -89,7 +89,7 @@ export const experience: Experience = {
   ],
   positions: [
     {
-      name: 'aaqua',
+      company: 'aaqua',
       location: 'Antwerp, Belgium',
       title: 'Senior Software Engineer',
       role: Role.EMPLOYEE,
@@ -128,7 +128,7 @@ export const experience: Experience = {
       ],
     },
     {
-      name: 'Sortlist',
+      company: 'Sortlist',
       location: 'Brussels, Belgium',
       title: 'Senior Frontend Engineer, Team Lead',
       role: Role.EMPLOYEE,
@@ -159,7 +159,7 @@ export const experience: Experience = {
       ],
     },
     {
-      name: 'devfair',
+      company: 'devfair',
       location: 'Remote',
       title: 'Software Engineer',
       role: Role.CONTRACTOR,
@@ -186,7 +186,7 @@ export const experience: Experience = {
       ],
     },
     {
-      name: 'Swrve',
+      company: 'Swrve',
       location: 'Dublin, Ireland',
       title: 'Software Engineer',
       role: Role.EMPLOYEE,
@@ -210,7 +210,7 @@ export const experience: Experience = {
       ],
     },
     {
-      name: 'GlassByte',
+      company: 'GlassByte',
       location: 'Dublin, Ireland',
       title: 'Cofounder, Chief Product/Technology Officer',
       role: Role.SELF_EMPLOYED,
@@ -237,7 +237,7 @@ export const experience: Experience = {
       ],
     },
     {
-      name: 'Accenture',
+      company: 'Accenture',
       location: 'Dublin, Ireland',
       title: 'Software Engineer Intern',
       role: Role.EMPLOYEE,
