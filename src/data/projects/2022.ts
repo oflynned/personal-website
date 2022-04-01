@@ -21,7 +21,7 @@ export const projects_2022: Project[] = [
     technologies: [...usualApiStack],
   },
   {
-    name: 'DiabetesPlus',
+    name: 'DiabetesPlus v2',
     year: 2022,
     type: ProjectType.PERSONAL,
 

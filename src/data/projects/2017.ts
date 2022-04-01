@@ -49,7 +49,7 @@ export const projects_2017: Project[] = [
   {
     name: 'H. pylori Diagnosis App',
     description: [
-      'This was a contract project for the TAGG group in Tallaght AMNCH hospital in Dublin Ireland.',
+      'This was a contract project for the TAGG group in the hospital Tallaght AMNCH in Dublin Ireland.',
       'The objective of this app was to move from a paper printout to a digital way of diagnosing the H. pylori bacterial infection. I gathered requirements from doctors who would act as clients in the project, and they would provide guidance at fortnightly meetings.',
       'Eventually two native apps were released: one on iOS and one on Android.',
     ],
@@ -66,8 +66,31 @@ export const projects_2017: Project[] = [
     ],
   },
   {
+    name: 'DiabetesPlus',
+    year: 2017,
+    type: ProjectType.STARTUP,
+    description: [
+      'DiabetesPlus was another collaboration with the hospital Tallaght AMNCH in Dublin, Ireland. The initial scope of the project was to create a proof of concept for validation in a clinical trial.',
+      'The app was a recommendation engine for users who live with type 2 diabetes and required suggestions to manage their blood sugar levels when exercising. It won a cash-prize in the entrepreneur awards hosted in CIT.',
+    ],
+    technologies: [
+      Framework.FLASK,
+      Language.PYTHON,
+      Platform.API,
+      Platform.ANDROID_APP,
+      Framework.ANDROID_SDK,
+      Language.JAVA,
+      Platform.IOS_APP,
+      Framework.IOS_SDK,
+      Language.SWIFT,
+      Language.XML,
+    ],
+  },
+  {
     name: 'Thesis Dissertation',
-    description: [],
+    description: [
+      'I wrote my thesis around the topic of socio-metric performance prediction in order to do some exploratory work around the area of collaboration metric gauging. The goal was to deterministically reconcile parameters of contributor efforts on open-source software. ',
+    ],
     year: 2017,
     type: ProjectType.PERSONAL,
     technologies: [
@@ -96,8 +119,13 @@ export const projects_2017: Project[] = [
   },
   {
     name: 'Loinnir',
-    description: [],
+    description: [
+      'Loinnir started off at an Irish-language computer science hackathon in University College Dublin in April 2017 where the goal was to create a solution for the topic "the Irish language around me". I collaborated with an engineer and a business student to create a proof of concept of digital Irish speaking regions. The app was crude, but allowed the user to find speakers in their locality and attend local events.',
+      'Some weeks later, I revisited the idea and created a messaging service where users can form their own communities, grow their locality, and matchmaking users interested in chatting with others.',
+      'At its peak, the service had >550 users, and a 30 day mean-retention rate.',
+    ],
     year: 2017,
+    notable: true,
     type: ProjectType.PERSONAL,
     technologies: [
       Language.PYTHON,
@@ -117,7 +145,7 @@ export const projects_2017: Project[] = [
     name: 'PlusPlant',
     description: [
       'A friend of mine needed a website to showcase his business of offsetting carbon footprints by planting trees in rural Kenya.',
-      'I created a static set of pages using the Bulma design system.',
+      'I created a static website using the Bulma design system for them to showcase their idea and attract investors.',
     ],
     year: 2017,
     type: ProjectType.STARTUP,
