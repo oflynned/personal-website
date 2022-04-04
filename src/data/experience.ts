@@ -32,7 +32,9 @@ export type Experience = {
   name: string;
   summary: string;
   email: string;
-  links: Link[];
+  github: Link;
+  linkedin: Link;
+  website: Link;
   positions: Position[];
   qualifications: Qualification[];
   languages: string[];
@@ -55,23 +57,21 @@ export const experience: Experience = {
   name: "Edmond O'Flynn",
   summary: `A talented full-stack software engineer with ${yearsOfExperience()} years of industry experience. A demonstrated history of team leadership and cross-platform product development in JavaScript & TypeScript using NodeJS & React.`,
   email: 'oflynned@gmail.com',
-  links: [
-    {
-      site: Site.GITHUB,
-      name: 'GitHub',
-      url: 'https://github.com/oflynned',
-    },
-    {
-      site: Site.LINKEDIN,
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/edmond-%C3%B3-floinn-41b06497',
-    },
-    {
-      site: Site.WEBSITE,
-      name: 'Personal website',
-      url: 'https://syzible.com',
-    },
-  ],
+  github: {
+    site: Site.GITHUB,
+    name: 'GitHub',
+    url: 'https://github.com/oflynned',
+  },
+  linkedin: {
+    site: Site.LINKEDIN,
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/edmond-%C3%B3-floinn-41b06497',
+  },
+  website: {
+    site: Site.WEBSITE,
+    name: 'Personal website',
+    url: 'https://syzible.com',
+  },
   awards: [
     'Received a New Frontiers Phase 1 scholarship to build business development skills in DCU, Ireland',
     'Achieved first place in the hackathon Hackathon na Gaeilge organised by UCD, Ireland.',
