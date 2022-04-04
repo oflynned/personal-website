@@ -35,7 +35,7 @@ const CurriculumVitae: NextPage = () => {
             window.open('/cv.pdf', '_blank');
           }}
         >
-          PDF version available here
+          PDF version here
         </Chip>
       </div>
       <Page>
