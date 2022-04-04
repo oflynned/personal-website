@@ -22,7 +22,11 @@ const Home: NextPage = () => {
     : `Right now either I'm taking a break from work and recharging, or doing freelance work.`;
 
   return (
-    <div className={'w-screen h-screen snap-y snap-mandatory overflow-scroll'}>
+    <div
+      className={
+        'w-screen h-screen sm:snap-y sm:snap-mandatory overflow-scroll'
+      }
+    >
       <div
         className={
           'flex flex-col min-h-screen w-screen snap-start overflow-scroll items-center justify-between pb-8'
