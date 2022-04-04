@@ -16,7 +16,9 @@ const {
   name,
   summary,
   email,
-  links,
+  github,
+  website,
+  linkedin,
   positions,
   qualifications,
   languages,
@@ -39,7 +41,14 @@ const CurriculumVitae: NextPage = () => {
         </Chip>
       </div>
       <Page>
-        <Header name={name} summary={summary} email={email} links={links} />
+        <Header
+          name={name}
+          summary={summary}
+          email={email}
+          github={github}
+          website={website}
+          linkedin={linkedin}
+        />
 
         <div className={'mt-8'}>
           <WorkHistory positions={positions} />

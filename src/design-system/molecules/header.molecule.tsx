@@ -1,17 +1,22 @@
 import { FC } from 'react';
-import { Link } from '../../data/experience';
+import { Experience } from '../../data/experience';
 import { Heading } from '../atoms/heading.atom';
 import { Glyph, Icon } from '../atoms/icon.atom';
 import { Paragraph } from '../atoms/paragraph.atom';
 
-export type Props = {
-  name: string;
-  summary: string;
-  email: string;
-  links: Link[];
-};
+export type Props = Pick<
+  Experience,
+  'name' | 'summary' | 'email' | 'github' | 'linkedin' | 'website'
+>;
 
-export const Header: FC<Props> = ({ name, summary, email, links }) => {
+export const Header: FC<Props> = ({
+  name,
+  summary,
+  email,
+  github,
+  website,
+  linkedin,
+}) => {
   return (
     <div>
       <div className={'flex sm:flex-row flex-col justify-between'}>
@@ -20,10 +25,24 @@ export const Header: FC<Props> = ({ name, summary, email, links }) => {
           <Paragraph>Software Engineer</Paragraph>
         </div>
         <div className={'flex flex-row mt-2 space-x-2'}>
-          <Icon glyph={Glyph.EMAIL} />
-          <Icon glyph={Glyph.WEBSITE} />
-          <Icon glyph={Glyph.GITHUB} />
-          <Icon glyph={Glyph.LINKEDIN} />
+          <Icon
+            glyph={Glyph.EMAIL}
+            onClick={() => {
+              window.open(`mailto:${email}`);
+            }}
+          />
+          <Icon
+            glyph={Glyph.WEBSITE}
+            onClick={() => window.open(website.url, '_blank')}
+          />
+          <Icon
+            glyph={Glyph.GITHUB}
+            onClick={() => window.open(github.url, '_blank')}
+          />
+          <Icon
+            glyph={Glyph.LINKEDIN}
+            onClick={() => window.open(linkedin.url, '_blank')}
+          />
         </div>
       </div>
       <div className={'my-4'}>
