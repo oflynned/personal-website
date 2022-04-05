@@ -66,7 +66,7 @@ const Home: NextPage = () => {
               height={240}
               alt={'Me'}
               src={'/me.jpeg'}
-              className={' hadow rounded-3xl border-none align-middle'}
+              className={'rounded-3xl border-none align-middle'}
             />
           </motion.div>
         </div>
@@ -199,11 +199,9 @@ const Home: NextPage = () => {
       <section className={'min-h-screen w-screen snap-start'}>
         <div
           className={
-            'flex flex-col min-h-screen w-screen snap-start overflow-scroll items-center justify-between space-y-4 px-4 py-8'
+            'flex flex-col min-h-screen w-screen snap-start overflow-scroll items-center justify-center space-y-4 px-4 py-8'
           }
         >
-          <div />
-
           <div className={'max-w-screen-lg space-y-4 text-center'}>
             <XlHeading>The past</XlHeading>
             <ol className={'text-left space-y-4'}>
@@ -261,24 +259,21 @@ const Home: NextPage = () => {
               </li>
             </ol>
           </div>
-
-          <Paragraph>👇</Paragraph>
         </div>
       </section>
 
       <section className={'h-screen w-screen snap-start'}>
         <div
           className={
-            'flex flex-col h-screen w-screen snap-start overflow-scroll items-center justify-between space-y-4 p-4'
+            'flex flex-col h-screen w-screen snap-start overflow-scroll items-center justify-center space-y-4 p-4'
           }
         >
-          <div />
           <div className={'text-center space-y-4'}>
             <XlHeading>The present</XlHeading>
 
             <Paragraph>{currentSituation}</Paragraph>
             <Paragraph>
-              In my spare time, I like to work on my own projects.
+              In my spare time, I like to work on my own projects and hobbies.
             </Paragraph>
 
             <Heading>Github</Heading>
@@ -311,7 +306,6 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <Paragraph>👇</Paragraph>
         </div>
       </section>
 
@@ -322,17 +316,46 @@ const Home: NextPage = () => {
           }
         >
           <XlHeading>The future</XlHeading>
-          <div className={'mb-8 mt-2 space-y-4 text-center'}>
+          <div className={'mb-8 mt-2 space-y-4 text-center flex flex-col'}>
+            <div>
+              <Paragraph>
+                I am interested in working in innovative areas of technology
+                that improve people&apos;s lives.
+              </Paragraph>
+              <Paragraph>
+                I&apos;m also open to taking some risks and co-founding a
+                startup as long as the focus is building a great product.
+              </Paragraph>
+            </div>
+            <div className={'max-w-lg self-center'}>
+              <Card>
+                <div className={'p-4 text-left space-y-4'}>
+                  <div>
+                    <Title>This does not include ❌</Title>
+                    <Paragraph>
+                      Crypto, weapons, oil, tobacco, gambling, stock trading,
+                      banks, auditing, services where engineers are the consumer
+                    </Paragraph>
+                  </div>
+                  <div>
+                    <Title>It depends on the company 🤷‍♂️</Title>
+                    <Paragraph>
+                      Social media, insurance, housing, travel
+                    </Paragraph>
+                  </div>
+                  <div>
+                    <Title>This does include ✅</Title>
+                    <Paragraph>
+                      Health, languages, ethical management, environment,
+                      marketplaces, content streaming, transport, education,
+                      communication, fitness, logistics, music
+                    </Paragraph>
+                  </div>
+                </div>
+              </Card>
+            </div>
             <Paragraph>
-              I am interested in working in innovative areas of technology that
-              improve people&apos;s lives.
-            </Paragraph>
-            <Paragraph>
-              I&apos;ve the startup itch again. I want something super early
-              stage so I can make a large impact and have some creative freedom.
-            </Paragraph>
-            <Paragraph>
-              Think I could be a good fit? Let&apos;s chat 🤝
+              Think I could be a good fit? Let&apos;s chat over a coffee 🤝
             </Paragraph>
           </div>
 
