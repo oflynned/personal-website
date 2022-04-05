@@ -3,10 +3,8 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { experience } from '../data/experience';
-import { projects } from '../data/projects';
 import { Card } from '../design-system/atoms/card.atom';
 import { Chip } from '../design-system/atoms/chip.atom';
-import { Heading } from '../design-system/atoms/heading.atom';
 import { Paragraph } from '../design-system/atoms/paragraph.atom';
 import { Title } from '../design-system/atoms/title.atom';
 import { XlHeading } from '../design-system/atoms/xl-heading.atom';
@@ -275,36 +273,6 @@ const Home: NextPage = () => {
             <Paragraph>
               In my spare time, I like to work on my own projects and hobbies.
             </Paragraph>
-
-            <Heading>Github</Heading>
-            <div className={'flex justify-center'}>
-              <div className={'grid grid-cols-2 gap-4'}>
-                <Card>
-                  <div className={'p-4'}>
-                    <Title>Commits</Title>
-                    <Paragraph>1,234</Paragraph>
-                  </div>
-                </Card>
-                <Card>
-                  <div className={'p-4'}>
-                    <Title>Pull Requests</Title>
-                    <Paragraph>1,234</Paragraph>
-                  </div>
-                </Card>
-                <Card>
-                  <div className={'p-4'}>
-                    <Title>Repositories</Title>
-                    <Paragraph>1,234</Paragraph>
-                  </div>
-                </Card>
-                <Card>
-                  <div className={'p-4'}>
-                    <Title>Projects</Title>
-                    <Paragraph>{projects.length}</Paragraph>
-                  </div>
-                </Card>
-              </div>
-            </div>
           </div>
         </div>
       </section>
