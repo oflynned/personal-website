@@ -268,8 +268,11 @@ const Home: NextPage = () => {
         >
           <div className={'text-center space-y-4'}>
             <XlHeading>The present</XlHeading>
-
             <Paragraph>{currentSituation}</Paragraph>
+            <Paragraph>
+              My preferred stack is NodeJS, TypeScript, NestJS, PostgreSQL &amp;
+              ReactJS.
+            </Paragraph>
             <Paragraph>
               In my spare time, I like to work on my own projects and hobbies.
             </Paragraph>
