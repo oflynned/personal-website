@@ -9,7 +9,9 @@ import {
 export const projects_2014: Project[] = [
   {
     name: 'Asteroids',
-    description: [],
+    description: [
+      'A game project as part of my university degree using OpenGL on a mobile device. The app was a simple project where the gyroscope of the device moved a spaceship on a 2d plane in order to avoid asteroids approaching the camera on a 3d plane. The longer the user avoids a collision, the higher the score will be.',
+    ],
     year: 2014,
     type: ProjectType.PERSONAL,
     technologies: [

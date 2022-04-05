@@ -24,7 +24,9 @@ export const projects_2015: Project[] = [
   },
   {
     name: 'Irish Language Grammar App',
-    description: [],
+    description: [
+      'A corpus of grammar rules as part of a personal project to make the Irish language more accessible.',
+    ],
     year: 2015,
     type: ProjectType.PERSONAL,
     technologies: [
@@ -36,7 +38,9 @@ export const projects_2015: Project[] = [
   },
   {
     name: 'DrinkTracker',
-    description: [],
+    description: [
+      'A project with some friends to make a digital breathalyser to enforce harm reduction methods of binge drinking. Users add drinks throughout a night, and the device locally creates a crude graph of the decay of alcohol from the bloodstream. The app had approximately 5K downloads within 2 years.',
+    ],
     year: 2015,
     type: ProjectType.STARTUP,
     technologies: [
@@ -65,7 +69,9 @@ export const projects_2015: Project[] = [
   },
   {
     name: 'Monopoly Markov Chain Simulation',
-    description: [],
+    description: [
+      'A mathematical simulation of the probability of landing on certain tiles in the game Monopoly as part of a university assignment.',
+    ],
     year: 2015,
     type: ProjectType.PERSONAL,
     technologies: [Language.JAVA],

@@ -12,7 +12,9 @@ import {
 export const projects_2017: Project[] = [
   {
     name: 'Real Time Dublin',
-    description: [],
+    description: [
+      'A quick personal project to improve the UI/UX experience of the end user. The app was a redesign of the Dublin bus app using their real time information REST endpoint, but added some additional functionalities such as saving frequently used stops and a last bus alarm.',
+    ],
     year: 2017,
     type: ProjectType.PERSONAL,
     technologies: [
@@ -25,7 +27,7 @@ export const projects_2017: Project[] = [
   {
     name: 'Farrel McDarrel Soundboard',
     description: [
-      'This was a soundboard app as part of a joke with some friends.',
+      'This was a soundboard app as part of a mini hackathon with some friends.',
     ],
     year: 2017,
     type: ProjectType.PERSONAL,
@@ -153,7 +155,10 @@ export const projects_2017: Project[] = [
   },
   {
     name: 'Plynk - Banking App Redesign',
-    description: [],
+    description: [
+      'Back in 2017, I worked briefly at an Irish banking app called Plynk. That is, until they decided not to pay me. I was excited to join, and had some ideas to present to the team in order to make banking more innovative and user friendly. Remember that this was before n26 and Revolut were so large. ',
+      'One of the initial projects I did before joining was a redesign involving contactless NFC payments between phones and quick proof of concepts surrounding instant money transfer.',
+    ],
     year: 2017,
     type: ProjectType.PERSONAL,
     technologies: [

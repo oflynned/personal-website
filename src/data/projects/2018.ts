@@ -12,7 +12,11 @@ import {
 export const projects_2018: Project[] = [
   {
     name: 'Occup.ie',
-    description: [],
+    description: [
+      'In 2018, it was getting increasingly more difficult to find a place to live in Dublin. The choice at the time was limited to websites such as Daft.ie, Rent.ie, MyHome.ie...and the main problem with those websites was a lack of innovation and accountability, difficulty scheduling visits instead of picking from a calendar, no digital rent agreements, no escrow accounts for securing a deposit, no way to formally define issues to the landlord transparently... The list goes on.',
+      'With my co-founder, we decided to research and play with some ideas and validate them through user hypothesis testing. We also created a quick proof of concept of how we could present these within an MVP. While the MVP was an interesting concept and there was certainly some interest from responses, eventually it became clear that a growing housing crisis would make it too difficult to enter the market with an uneven marketplace.',
+      'Since the goal of the quick research and MVP was to validate and to fail fast, ultimately we ended up failing fast with minimal time and money lost.',
+    ],
     year: 2018,
     type: ProjectType.STARTUP,
     technologies: [
@@ -30,7 +34,9 @@ export const projects_2018: Project[] = [
   },
   {
     name: 'Trym',
-    description: [],
+    description: [
+      'A quick play-project into an easier solution to book hair treatments as a direct competitor to Treatwell. The app was a brief investigation into finding local stylists, collating reviews and ratings, and allowing mobile/electronic payments where the establishment did not have access to a card reader.',
+    ],
     year: 2018,
     type: ProjectType.STARTUP,
     technologies: [
@@ -46,7 +52,9 @@ export const projects_2018: Project[] = [
   },
   {
     name: 'T1Exercise',
-    description: [],
+    description: [
+      'A revisit to the initial investigation in 2017 of DiabetesPlus. A thesis was written using clinical trial data aggregated from test groups via the app, and an additional phase of development was tendered in order to add more features to both the iOS and Android clients.',
+    ],
     year: 2018,
     type: ProjectType.CONTRACTOR,
     technologies: [
