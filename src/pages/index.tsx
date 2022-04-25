@@ -194,7 +194,11 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className={'min-h-screen w-screen snap-start overflow-x-hidden overflow-y-scroll'}>
+      <section
+        className={
+          'min-h-screen w-screen snap-start overflow-x-hidden overflow-y-scroll'
+        }
+      >
         <div
           className={
             'flex flex-col min-h-screen items-center justify-center space-y-4 px-4 py-8'
@@ -207,7 +211,8 @@ const Home: NextPage = () => {
                 <div>
                   <Title>2015</Title>
                   <Paragraph>
-                    I started my first startup with some friends &mdash; GlassByte.
+                    I started my first startup with some friends &mdash;
+                    GlassByte.
                   </Paragraph>
                 </div>
               </li>
@@ -239,7 +244,7 @@ const Home: NextPage = () => {
               <li>
                 <Title>2019</Title>
                 <Paragraph>
-                  I moved to Belgium and worke overflow-scrolld as a remote contractor for a few
+                  I moved to Belgium and worked as a remote contractor for a few
                   months with devfair. Later that year, I started at Sortlist.
                 </Paragraph>
               </li>
@@ -259,7 +264,11 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className={'h-screen w-screen snap-start overflow-x-hidden overflow-y-scroll'}>
+      <section
+        className={
+          'h-screen w-screen snap-start overflow-x-hidden overflow-y-scroll'
+        }
+      >
         <div
           className={
             'flex flex-col h-screen items-center justify-center space-y-4 p-4'
@@ -279,7 +288,11 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className={'h-screen w-screen snap-start overflow-x-hidden overflow-y-scroll'}>
+      <section
+        className={
+          'h-screen w-screen snap-start overflow-x-hidden overflow-y-scroll'
+        }
+      >
         <div
           className={
             'flex flex-col h-screen w-screen items-center justify-center px-4 py-8'
