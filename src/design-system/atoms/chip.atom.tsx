@@ -9,7 +9,7 @@ export const Chip: FC<Props> = ({ children, onClick = () => {} }) => {
   return (
     <div
       className={
-        'rounded-lg bg-blue-100 hover:bg-blue-300 hover:cursor-pointer duration-150 p-2'
+        'rounded-lg bg-blue-100 hover:bg-blue-300 hover:cursor-pointer duration-150 p-2 text-center'
       }
       onClick={onClick}
     >
