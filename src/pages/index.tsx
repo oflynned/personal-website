@@ -317,20 +317,21 @@ const Home: NextPage = () => {
                     <Title>This does not include ❌</Title>
                     <Paragraph>
                       Crypto, weapons, oil, tobacco, gambling, stock trading,
-                      banks, auditing, services where engineers are the consumer
+                      banks, auditing
                     </Paragraph>
                   </div>
                   <div>
                     <Title>It depends on the company 🤷‍♂️</Title>
                     <Paragraph>
-                      Social media, insurance, housing, travel
+                      Social media, insurance, housing, travel, devops, content
+                      streaming
                     </Paragraph>
                   </div>
                   <div>
                     <Title>This does include ✅</Title>
                     <Paragraph>
-                      Health, languages, ethical management, environment,
-                      marketplaces, content streaming, transport, education,
+                      Proven health concepts, languages, ethical management,
+                      environment, marketplaces, transport, education,
                       communication, fitness, logistics, music
                     </Paragraph>
                   </div>
