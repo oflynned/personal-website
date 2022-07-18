@@ -12,12 +12,7 @@ import { Navbar } from '../design-system/molecules/nav-bar.molecule';
 
 const Home: NextPage = () => {
   const router = useRouter();
-
-  const currentJob = experience.positions.find((item) => !item.end);
-  const hasJob = !!currentJob;
-  const currentSituation = hasJob
-    ? `Right now I'm working as a ${currentJob.title} at ${currentJob.company}, and have been doing so since ${currentJob.start}.`
-    : `Right now either I'm taking a break from work and recharging, or doing freelance work.`;
+  const [job] = experience.positions
 
   return (
     <div
@@ -276,7 +271,7 @@ const Home: NextPage = () => {
         >
           <div className={'text-center space-y-4'}>
             <XlHeading>The present</XlHeading>
-            <Paragraph>{currentSituation}</Paragraph>
+            <Paragraph>{`Right now I'm working as a ${job.title} at ${job.company}, and have been doing so since ${job.start}.`}</Paragraph>
             <Paragraph>
               My preferred stack is NodeJS, TypeScript, NestJS, PostgreSQL &amp;
               ReactJS.
